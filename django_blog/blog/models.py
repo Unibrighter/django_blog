@@ -27,6 +27,8 @@ class Post(models.Model):
     tags = models.ManyToManyField(Tag, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
+    # TODO: consider to add `click/view times` in the future 
+
     def __str__(self):
         return self.title
 
