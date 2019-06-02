@@ -1,4 +1,4 @@
-
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 	<!-- 
@@ -13,17 +13,16 @@
         
         <!--TODO Fix me-->
         <link href='http://jackslab.org/aboutme/fonts' rel='stylesheet' type='text/css' />
-
+        <!--TODO Fix me-->
         <link href="{% static 'user_profile/user_profile.css' %}" rel='stylesheet' type='text/css' />
     </head>
 
     <body>
         <div class='container'>
-
             <!--TODO Fix the profile image here-->
 			<div id="chart_div" style="height: 460px;background-image:url(head.jpg);"></div>
             <div class='content'>
-                {{ profile.abstraction }}
+                {{ profile.abstraction | safe}}
             </div>
             <div class='footer'>Copyright © <a href="mailto:kunliang.wu@unibrighter.com">Robert Wu</a> All rights reserved.
             </div>
