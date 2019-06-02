@@ -10,6 +10,7 @@ pygments = "*"
 pillow = "*"
 django-admin-material = "*"
 django-imagekit = "*"
+django-material = "*"
 
 [dev-packages]
 pylint = "*"
