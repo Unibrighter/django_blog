@@ -9,6 +9,7 @@ markdown = "*"
 pygments = "*"
 pillow = "*"
 django-admin-material = "*"
+django-imagekit = "*"
 
 [dev-packages]
 pylint = "*"
