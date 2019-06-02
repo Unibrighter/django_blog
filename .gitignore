@@ -106,3 +106,9 @@ venv.bak/
 # IDE
 .vscode/
 .idea/
+
+# the static needs to be collected by running `python manage.py collectstatic` in the end
+static/
+
+# the multi-media files uplodaed
+media/

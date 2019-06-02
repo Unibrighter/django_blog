@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<!-- 
+		reference: http://www.jackslab.org/aboutme/
+		need a model (Profile) to load this information dynamically
+	-->
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ profile.nickname }}</title>
+        <meta name="description" content="{{ profile.description }}">
+        <meta name="author" content="{{ profile.nickname }}">
+        
+        <!--TODO Fix me-->
+        <link href='http://jackslab.org/aboutme/fonts' rel='stylesheet' type='text/css' />
+        <!--TODO Fix me-->
+        <link href="{% static 'user_profile/user_profile.css' %}" rel='stylesheet' type='text/css' />
+    </head>
+
+    <body>
+        <div class='container'>
+            <!--TODO Fix the profile image here-->
+			<div id="chart_div" style="height: 460px;background-image:url(head.jpg);"></div>
+            <div class='content'>
+                {{ profile.abstraction | safe}}
+            </div>
+            <div class='footer'>Copyright © <a href="mailto:kunliang.wu@unibrighter.com">Robert Wu</a> All rights reserved.
+            </div>
+        </div>
+    </body>
+</html>
