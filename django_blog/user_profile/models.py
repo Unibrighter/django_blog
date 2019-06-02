@@ -2,6 +2,9 @@ from django.db import models
 
 from django.contrib.auth.models import User
 
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+
 class Profile(models.Model):
     ## A nick name as the title of the profile page
     nickname = models.CharField(max_length = 64)
@@ -19,7 +22,7 @@ class Profile(models.Model):
     cv = models.FileField(blank=True)
 
     ## The user that links to the profile
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(User, on_delete = models.PROTECT)
 
 
 @receiver(post_save, sender=User)
