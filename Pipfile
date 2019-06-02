@@ -8,6 +8,7 @@ django = "*"
 markdown = "*"
 pygments = "*"
 pillow = "*"
+django-admin-material = "*"
 
 [dev-packages]
 pylint = "*"
