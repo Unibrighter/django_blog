@@ -1,115 +1,145 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Black &amp; White</title>
-
-		<!-- meta -->
-		<meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	    <!-- css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/ionicons.min.css">
-		<link rel="stylesheet" href="css/pace.css">
-	    <link rel="stylesheet" href="css/custom.css">
-
-	    <!-- js -->
-	    <script src="js/jquery-2.1.3.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
-	    <script src="js/pace.min.js"></script>
-	    <script src="js/modernizr.custom.js"></script>
-	</head>
-
-	<body id="page">
-		<div class="container">	
-			<header id="site-header">
-				<div class="row">
-					<div class="col-md-4 col-sm-5 col-xs-8">
-						<div class="logo">
-							<h1><a href="index.html"><b>Black</b> &amp; White</a></h1>
-						</div>
-					</div><!-- col-md-4 -->
-					<div class="col-md-8 col-sm-7 col-xs-4">
-						<nav class="main-nav" role="navigation">
-							<div class="navbar-header">
-  								<button type="button" id="trigger-overlay" class="navbar-toggle">
-    								<span class="ion-navicon"></span>
-  								</button>
-							</div>
-
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  								<ul class="nav navbar-nav navbar-right">
-    								<li class="cl-effect-11"><a href="index.html" data-hover="Home">Home</a></li>
-    								<li class="cl-effect-11"><a href="full-width.html" data-hover="Blog">Blog</a></li>
-    								<li class="cl-effect-11"><a href="about.html" data-hover="About">About</a></li>
-    								<li class="cl-effect-11"><a href="contact.html" data-hover="Contact">Contact</a></li>
-  								</ul>
-							</div><!-- /.navbar-collapse -->
-						</nav>
-						<div id="header-search-box">
-							<a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
-							<div id="search-form" class="search-form">
-								<form role="search" method="get" id="searchform" action="#">
-									<input type="search" placeholder="Search" required>
-									<button type="submit"><span class="ion-ios-search-strong"></span></button>
-								</form>				
-							</div>
-						</div>
-					</div><!-- col-md-8 -->
-				</div>
-			</header>
-		</div>
-
-		<div class="content-body">
-			<div class="container">
-				<div class="row">
-					<main class="col-md-12">
-						<h1 class="page-title">About Me</h1>
-						<article class="post">
-							<div class="entry-content clearfix">
-								<figure class="img-responsive-center">
-									<img class="img-responsive" src="img/me.jpg" alt="Developer Image">
-								</figure>
-								<p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
-								<p>Responsive web design offers us a way forward, finally allowing us to design for the ebb and flow of things. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly.</p>
-								<div class="height-40px"></div>
-								<h2 class="title text-center">Social</h2>
-								<ul class="social">
-									<li class="facebook"><a href="#"><span class="ion-social-facebook"></span></a></li>
-									<li class="twitter"><a href="#"><span class="ion-social-twitter"></span></a></li>
-									<li class="google-plus"><a href="#"><span class="ion-social-googleplus"></span></a></li>
-									<li class="tumblr"><a href="#"><span class="ion-social-tumblr"></span></a></li>
-								</ul>
-							</div>
-						</article>
-					</main>
-				</div>
-			</div>
-		</div>
-		<footer id="site-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<p class="copyright">&copy; 2014 ThemeWagon.com</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- Mobile Menu -->
-		<div class="overlay overlay-hugeinc">
-			<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="full-width.html">Blog</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-
-		<script src="js/script.js"></script>
+	<!-- 
+		reference: http://www.jackslab.org/aboutme/
+		need a model (Profile) to load this information dynamically
+	-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Jack Tan</title>
+        <meta name="description" content="I'm Jack Tan (Tan, Dajie), Geek">
+        <meta name="author" content="Jack Tan">
 		
-	</body>
+        <link href='http://jackslab.org/aboutme/fonts' rel='stylesheet' type='text/css' />
+        <link href='style.css' rel='stylesheet' type='text/css' />
+    </head>
+
+    <body>
+        <div class='container'>
+			<div id="chart_div" style="height: 460px;background-image:url(head.jpg);"></div>
+            <div class='content'>
+
+                <p class='cathegory'>About Jack</p>
+                <p class='presentation'>The owner of the Jack's Lab is Jack Tan（谭大杰）, a Programmer, HAM (call sigh is BH1RBH) and Geeker.</p>
+                <p class='presentation'>He work with GNU/Linux, Vim, GNU Toolchain and Mutt. Some of his work experience and personal projects can be found here.</p>
+				<p class='presentation'>He has 8+ years Linux kernel experience (Related to Architecture)
+				<p class='presentation'>Proficient in the MIPS Architecture, basic knowledge of ARM, PowerPC, SPARC, x86, xtensa</p>
+				<p class='presentation'>Experience of Arduino, Rasperberry Pi, ESP8266/8285/ESP32, AVR, C51...</p>
+				<p class='presentation'>Multi architecture assembly language, instruction level debuging</p>
+				<p class='presentation'>Strong learning, analytical and problem-solving skills</p>
+
+                <p class='cathegory'>Experience</p>
+                <ul class='project_list'>
+                    <li class='projects_item'>
+                    <span class='project_title'>Co-founder of noduino.org (2014/10 - present), </span>
+                        <span class='projects_item_description'>
+							<p>noduino.org is a a prototype-to-production platform for developing an IoT product of smart home ASAP.</p>
+							<p>Homepage: <a href=http://noduino.org>http://noduino.org</a></p>
+							<p>Github: <a href=https://github.com/icamgo>https://github.com/icamgo</a></p>
+						</span>
+					</li>
+                    <li class='projects_item'>
+                    <span class='project_title'>BSP Engneer @ Wind River Systems(Intel, 2007/10 - 2014/10), </span>
+                        <span class='projects_item_description'>
+
+							<p>Specialize in Linux BSP development include porting kernel(arch and drivers). keep the kernel up to date.</p>
+							<p>Platform: RMI XLP964/XLP832/XLP206/XLR732/XLS416, Cavium Octeon CN38xx/CN56xx/CN58xx, NEC EMMA3P, Freescale P50xx/MPC830x, SUN CP3220...</p>
+							<p>Driver: WiFi, SPI, CAN, I2C, UART, RTC, Ethernet, PCI...</p>
+							<p>System Virtualization. Porting the Guest OS for WindRiver Hypervisor.</p>
+							<p>Kernel Bug fix, relate to MIPS, PowerPC and x86</p>
+							<p>You can use this tech blog to learn more: <a href=http://wiki.jackslab.org target=_blank>http://hi.baidu.com/comcat</a></p>
+
+                        </span>
+                    </li>
+
+                    <li class='projects_item'>
+                    <span class='project_title'>Software Engneer @ SWHSS (2005/07 - 2007/10)</span>
+                        <span class='projects_item_description'>
+
+							<p>Developing Linux Distribution (RAYS LX). Including Basic system configuration program, Installer program...</p>
+							<p>Port the kernel 2.6.17 to MIPS/Godson2/Loongson2, improving MMU management, interrupt management.</p>
+							<p>Add the Oprofile support of MIPS/Godson2/Loongson2, including kernel patch and user space patch.</p>
+							<p>In charge of MPEG2/4, H.264 performace analysis and optimization on MIPS/Linux (Using Godson SIMD instruction) Team Leader (include training team member, assigning task and controlling progress)</p>
+							<p>You can use this tech blog to learn more: <a href=http://blog.csdn.net/comcat target=_blank>http://blog.csdn.net/comcat</a></p>
+
+                        </span>
+                    </li>
+				</ul>
+
+                <p class='cathegory'>Projects</p>
+                <ul class='project_list'>
+
+                    <li class='projects_item'>
+                    <span class='project_title'>Open MiWiFi: a freedom core system of Xiaomi Router R1D</span>
+                        <span class='project_link'>
+
+                            <a href="http://www.jackslab.org/?portfolio=小米路由系统开源版本" target=_blank>Project</a>&nbsp;
+                            <a href="https://github.com/comcat/miwifi" target=_blank>Github</a>
+
+                        </span>
+                        <span class='projects_item_description'>
+
+							<p></p>
+							<p>Tech Points: Embeded System, Linux Kernel, BSP, ARM, WiFi, OpenWRT</p>
+                        </span>
+                    </li>
+
+                    <li class='projects_item'>
+                    <span class='project_title'>EPRS: an Emergence Position Report System</span>
+                        <span class='project_link'>
+
+                            <a href="http://www.jackslab.org/?portfolio=%E7%B4%A7%E6%80%A5%E6%83%85%E5%86%B5%E4%BD%8D%E7%BD%AE%E6%8A%A5%E5%91%8A%E7%B3%BB%E7%BB%9F-eprs" target=_blank>Project</a>&nbsp;
+                            <a href="http://eprs.jackslab.org" target=_blank>Monitor</a>
+
+                        </span>
+                        <span class='projects_item_description'>
+
+                            <p>EPRS is an Emergence Positon Report System. You can use your Isatphone(Satellite phone) to report your position(via SMS) when you meet emergence situation. You can also use APRS Radio, GSM/CDMA/3G SMS and GPRS to report your Position.</p>
+
+							<p>Tech Points: Satellite interface, SMS gateway, APRS monitor, Embeded System, Perl, PHP, Javascript, MySQL</p>
+                        </span>
+                    </li>
+
+                    <li class='projects_item'>
+                    <span class='project_title'>oRadio: an Open SDR Radio Box</span>
+                        <span class='project_link'>
+
+                            <a href="http://www.jackslab.org/?portfolio=oradio-%E6%8E%A2%E7%B4%A2%E6%97%A0%E7%BA%BF%E7%94%B5%E4%B8%96%E7%95%8C%E7%9A%84%E5%B0%8F%E9%AD%94%E7%9B%92" target=_blank>Project</a>&nbsp;
+                            <a href="http://aprs.fi/#!mt=roadmap&z=11&call=a%2FBH1RBH-10" target=_blank>Monitor</a>
+
+                        </span>
+                        <span class='projects_item_description'>
+
+                            <p>You can use this box as an ADS-B decoder or an APRS base station.</p>
+
+							<p>Tech Points: Embeded System, ARM, Debian, SDR, APRS, ADS-B</p>
+                        </span>
+                    </li>
+                </ul>
+
+                <p class='cathegory'>Education</p>
+                <ul class='project_list'>
+                    <li class='projects_item'>
+                    <span class='project_title'>Nanjing University of Technology (2001/09 - 2005/06) </span>
+                        <span class='projects_item_description'>
+							<p>Bachelor of Applied Chemistry, July, 2005 </p>
+						</span>
+					</li>
+				</ul>
+
+                <p class='cathegory'>Links</p>
+                <div class='link_list'>
+                    <a href="http://jackslab.org/people/comcat" target=_blank><img src="doc.jpg" alt="Tech Doc written by Jack" /></a>
+                    <a href="http://github.com/comcat" target=_blank><img src="github.png" alt="Jack on github" /></a>
+                    <a href="http://weibo.com/comcat" target=_blank><img src="weibo.png" alt="Jack on Sina Weibo" /></a>
+                    <a href="http://comcat.lofter.com" target=_blank><img src="lofter.png" alt="Jack's Lofter" /></a>
+                </div>
+            </div>
+
+<div class='footer'>Copyright © <a href="mailto:jiankemeng@gmail.com">Jack Tan</a> - <a href="http://weibo.com/comcat">@comcat</a> All rights reserved.
+</div>
+
+        </div>
+    </body>
 </html>
