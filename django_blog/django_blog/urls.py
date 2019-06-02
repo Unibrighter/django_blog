@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# TODO: need to 1. figure out the reason why we need to add the static setting urls
+# TODO: 2. set up the nginx proxy server
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     # This will take a while for the sniffers to find
     path('Commandos1984/', admin.site.urls),
@@ -23,7 +28,4 @@ urlpatterns = [
     path('', include('comments.urls')),
     path('', include('user_profile.urls')),
     path('', include('gallery.urls')),
-]
-
-
-# ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
