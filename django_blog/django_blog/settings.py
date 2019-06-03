@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'material',
+    'material.admin',
     'django_admin_material',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'comments',
-    'user_profile'
+    'user_profile',
+    'gallery',
 ]
 
 MIDDLEWARE = [
