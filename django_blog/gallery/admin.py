@@ -44,8 +44,10 @@ class AlbumModelAdmin(admin.ModelAdmin):
                     img.alt = filename
                     filename = '{0}{1}.jpg'.format(album.slug, str(uuid.uuid4())[-13:])
                     img.image.save(filename, contentfile)
-                
-                    filepath = '{0}/albums/{1}'.format(django_photo_gallery.settings.MEDIA_ROOT, filename)
+
+                    # filepath = '{0}/albums/{1}'.format(django_blog.settings.MEDIA_ROOT, filename)
+                    filepath = os.path.join(django_blog.settings.MEDIA_ROOT, 'albums', filename)
+                    
                     with Image.open(filepath) as i:
                         img.width, img.height = i.size
 
