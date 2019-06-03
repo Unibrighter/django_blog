@@ -39,6 +39,7 @@ def category(request, category_id):
 
 def detail(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
+    post.increase_view_count()
     post.body = markdown.markdown(post.body,
                                   extensions=[
                                       'markdown.extensions.extra',

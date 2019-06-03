@@ -16,8 +16,9 @@
                         </a>
                     </span>
                     <span class="post-author"><a href="#">{{ post.author }}</a></span>
-                    <span class="comments-link"><a href="#">4 评论</a></span>
-                    <span class="views-count"><a href="#">588 阅读</a></span>
+                    <span class="comments-link"><a href="#">{{ post.comment_set.count }} 评论</a></span>
+                    <!-- TODO: There is a delayed loading issue, use back button doesn't trigger the refresh-->
+                    <span class="views-count"><a href="#">{{ post.view_count }} 阅读</a></span>
                 </div>
             </header>
             <div class="entry-content clearfix">

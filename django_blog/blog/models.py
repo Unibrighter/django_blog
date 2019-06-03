@@ -27,13 +27,17 @@ class Post(models.Model):
     tags = models.ManyToManyField(Tag, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    # TODO: consider to add `click/view times` in the future 
+    view_count = models.PositiveIntegerField(default = 0)
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
         return reverse('blog:detail', kwargs = {'post_id': self.pk})
+
+    def increase_view_count(self):
+        self.view_count += 1
+        self.save(update_fields=['view_count'])
 
     class Meta:
         ordering = ['-created_time','title']
