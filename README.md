@@ -13,7 +13,10 @@
 - Start: 2019-06-02 14:36:57
 - Agenda:
  - `2019-06-02 14:37:01` - Finish reading the tutorials, understanding the structures.
- - `2019-06-02 14:37:15`
+ - `2019-06-02 14:37:15` - The basic frameworks for Album
+ - `2019-06-10 21:53:18` - Finish the admin setup for Album and fix the related bugs
+  - TODO: 问题:Realize that bootstrap makes up an important part in the template
+  - TODO: ListView这样的属性,要到哪里去查? 去看了文档, 并没有相关属性的介绍,要直接去看源码吗?
 
 ## Task 2
 - Aim: rewrite the CSS and templates refinement.

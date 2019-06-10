@@ -13,6 +13,9 @@ class IndexView(ListView):
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
 
+    # set `paginate_by` property to enable pagination
+    paginate_by = 5
+
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
         context['title'] = 'My new blog'
